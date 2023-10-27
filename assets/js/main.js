@@ -26,10 +26,6 @@ let swiper = new Swiper(".swiper", {
 let buttons = document.querySelector('.butt'),
     forEach = Array.prototype.forEach;
 
-forEach.call(buttons, function (b) {
-    b.addEventListener('click', addElement);
-});
-
 function addElement(e) {
     let addDiv  = document.createElement('div'),
         mValue  = Math.max(this.clientWidth, this.clientHeight),
